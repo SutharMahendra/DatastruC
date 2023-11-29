@@ -15,7 +15,7 @@ void push(int data){
 int main(){
     int stack_arr[max];
     int top= -1;
-    push(12);
+    push(13);
     push(34);
     push(35);
     push(48);
