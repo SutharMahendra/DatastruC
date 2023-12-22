@@ -1,4 +1,4 @@
-// this is use for poping at the begining of stack
+// this is use for poping at the begining of stack 
 #include<stdio.h>
 #include<stdlib.h>
 #define max  4
