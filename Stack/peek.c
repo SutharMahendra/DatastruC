@@ -8,7 +8,7 @@ void push(int data)
 {
     if (top == max - 1)
     {
-        printf("Aukaat ke bahar ja raha he");
+        printf("Stack is overflow");
         return;
     }
     else
@@ -21,14 +21,14 @@ void display(int i, int new)
 {
     if (top == -1)
     {
-        printf("Apni aukaat me reh");
+        printf("stack is underflow");
         return;
     }
     else
     {
         if ((top - i) <= 0)
         {
-            printf("bhag");
+            printf("stack is underflow");
         }
         else
         {
@@ -41,7 +41,7 @@ void pop()
 {
     if (top == -1)
     {
-        printf("jaldi waha se hato");
+        printf("stack is underflow");
         return;
     }
     else
