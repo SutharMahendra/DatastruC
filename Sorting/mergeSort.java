@@ -1,25 +1,30 @@
 public class mergeSort {
     public static void main(String[] args) {
+        // creating array
         int[] arr = { 2, 4, 1, 4, 5, 7, 8, 3, 10, 14, 13, 12 };
 
-        mergeSortarr(arr, 0, arr.length - 1);
+        // calling mergeSortArray
+        mergeSortArray(arr, 0, arr.length - 1);
+
+        // printing all element of array
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
     }
 
-    private static void mergeSortarr(int[] arr, int start, int end) {
+    // implementation of mergeSortArray
+    public static void mergeSortArray(int[] arr, int start, int end) {
 
         if (start < end) {
             int mid = (start + end) / 2;
-            mergeSortarr(arr, start, mid);
-            mergeSortarr(arr, mid + 1, end);
+            mergeSortArray(arr, start, mid);
+            mergeSortArray(arr, mid + 1, end);
             merge(arr, start, mid, end);
         }
 
     }
 
-    private static void merge(int[] arr, int start, int mid, int end) {
+    public static void merge(int[] arr, int start, int mid, int end) {
         int left = start;
         int right = mid + 1;
 
